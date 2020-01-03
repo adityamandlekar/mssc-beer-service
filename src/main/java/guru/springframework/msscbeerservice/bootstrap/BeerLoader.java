@@ -26,6 +26,7 @@ public class BeerLoader implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
           if(beerRepository.count() == 0 ) {
+              System.out.println("No Beer Objects available and hench load the Beer Objects");
               loadBeerObjects();
           }
     }
